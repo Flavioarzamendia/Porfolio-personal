@@ -1,21 +1,75 @@
-// Functions first
-@import "../node_modules/bootstrap/scss/functions";
+:root {
+  --background-color: #333647;
+  --pink-color: #249bf1;
+  --secondary-color: #bbbbbb;
+  --bg-color-of-list-section: #818180;
+}
+* {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: var(--background-color) !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+td,
+a {
+  cursor: pointer;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-// Variable overrides second
-$primary: #900;
-$enable-shadows: true;
-$prefix: "mo-";
+  max-width: 1400px;
+  margin: 0 auto;
+}
 
-// Required Bootstrap imports
-@import "../node_modules/bootstrap/scss/variables";
-@import "../node_modules/bootstrap/scss/maps";
-@import "../node_modules/bootstrap/scss/mixins";
-@import "../node_modules/bootstrap/scss/root";
+.nav-menu {
+  list-style: none;
+  display: flex;
+  margin-right: 40px;
+}
 
-// Optional components
-@import "../node_modules/bootstrap/scss/utilities";
-@import "../node_modules/bootstrap/scss/reboot";
-@import "../node_modules/bootstrap/scss/containers";
-@import "../node_modules/bootstrap/scss/grid";
-@import "../node_modules/bootstrap/scss/helpers";
-@import "../node_modules/bootstrap/scss/utilities/api";
+.item-nav {
+  font-size: 20px;
+  margin: 0 10px;
+  line-height: 80px;
+}
+
+.logo {
+  margin-top: 10px;
+  margin-left: 20px;
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+}
+
+.nav-toggle {
+  color: #fff;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 60px;
+  display: none;
+}
+.navbar-text{
+  text-decoration: none;
+  font-size: 30px;
+  color: #fff;
+}
+.span{
+  color: var(--pink-color);
+}
+.btn-outline-dark{
+  border:none;
+  color: var(--pink-color);
+  font-size: 20px;
+}
